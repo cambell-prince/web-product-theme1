@@ -12,8 +12,8 @@
 		<div class="form-group">
 			<div class="input-group">
 				<input type="text" class="form-control" name="s" id="s" placeholder="<?php esc_attr_e( 'Search...', 'ttp' ); ?>" />
-				<span class="input-group-addon">
-					<i class="fa fa-search fa-fw" aria-hidden="true"></i>
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-default"><i class="fa fa-search fa-fw"></i></button>
 				</span>
 			</div>
 		</div>
