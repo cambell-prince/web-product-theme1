@@ -1,0 +1,121 @@
+<!doctype html>
+{% block head %}
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" {{site.language_attributes}}> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" {{site.language_attributes}}> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" {{site.language_attributes}}> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" {{site.language_attributes}}> <!--<![endif]-->
+<head>
+    <meta charset="{{site.charset}}" />
+    <title>{{wp_title}}</title>
+    <meta name="description" content="{{site.description}}">
+    <link rel="stylesheet" href="{{site.theme.link}}/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{site.theme.link}}/vendor/fortawesome/font-awesome/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="{{site.pingback_url}}" />
+	{{function('wp_head')}}
+{% endblock %}
+</head>
+<body class="{{body_class}}" data-ng-app="spDefault" data-source="base.twig">
+<!-- <body class="html front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page i18n-en navbar-is-static-top bootstrap-anchors-processed">
+ -->
+ <!-- HEADER -->
+<pre>
+{{dump(x)}}
+</pre>
+<div id="skip-link">
+	<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<header id="navbar" role="banner">
+<nav role="navigation" class="navbar navbar-default" data-ng-controller="NavCtrl">
+<div class="container">
+    <div class="navbar-header">
+    	<a class="logo navbar-btn pull-left" href="/" title="Home">
+        <img src="http://pacific.sil-dev.info/sites/pacific/files/pacific_logo_0_0.png" alt="Home">
+      	</a>
+      
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-ng-init="collapsed = true" data-ng-click="collapsed = !collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+<div class="collapse navbar-collapse" data-collapse="collapsed">
+		{{function('get_search_form')}}
+		<ul class="nav navbar-nav navbar-right"><li class="first expanded dropdown"><a href="/language_development" data-target="#" class="dropdown-toggle" data-hover="dropdown">Language Development <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/language_development/literacy_education">Literacy &amp; Education</a></li>
+		<li class="leaf"><a href="/language_development/language_programs">Program Management</a></li>
+		<li class="leaf"><a href="/language_development/language_technology">Technology</a></li>
+		<li class="last leaf"><a href="/language_development/translation">Translation</a></li>
+		</ul></li>
+		<li class="leaf"><a href="/resources" title="">Resources</a></li>
+		<li class="expanded dropdown"><a href="/training" data-target="#" class="dropdown-toggle" data-hover="dropdown">Training <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="http://prod.pacific.sil-dev.info/resources/for_specialists" title="">Formal Training</a></li>
+		<li class="leaf"><a href="/training/programs" title="">Non-Formal Training</a></li>
+		<li class="last leaf"><a href="/training/pilat">PILAT</a></li>
+		</ul></li>
+		<li class="last expanded dropdown"><a href="/about-0" data-target="#" class="dropdown-toggle" data-hover="dropdown">About SIL Pacific <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/about-0/who_we_are_">Who We Are</a></li>
+		<li class="leaf"><a href="/about-0/vision_and_strategy">Vision and Strategy</a></li>
+		<li class="leaf"><a href="/about/news" title="">News</a></li>
+		<li class="leaf"><a href="/about-0/partners-0">Partners</a></li>
+		<li class="leaf"><a href="http://pacific.sil-dev.info/about/pacific_stories" title="Pacific Stories">Pacific Stories</a></li>
+		<li class="leaf"><a href="/about-0/history">History</a></li>
+		<li class="leaf"><a href="/about-0/faq">FAQ</a></li>
+		<li class="leaf"><a href="/about/consultants">Consultants</a></li>
+		<li class="last leaf"><a href="http://prod.pacific.sil-dev.info/about/contact" title="">Contact US</a></li>
+		</ul></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+
+<div id="page-site-name">
+  <div class="container">
+    <h1 class="page-header">Pacific</h1>
+  </div>
+</div>
+{% block content %}
+  <div class="page-slider">
+      <div class="region region-slider">
+    <section id="block-bean-slideshow-pacific-home" class="block block-bean  clearfix">
+
+      
+  <div class="ds-1col entity entity-bean bean-slideshow view-mode-default clearfix">
+
+  
+  <div class="field field-name-field-sil-slider-collection field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div id="flexslider-1" class="flexslider flexslider-processed">
+  <ul class="slides"><li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><div class="ds-1col entity entity-field-collection-item field-collection-item-field-sil-slider-collection view-mode-full_width_slider clearfix">
+
+  
+  <div id="field_collection_item_field_sil_slider_collection_full_width_slider_group_sil_slider_wrapper" class="group-sil-slider-wrapper field-group-div"><div id="field_collection_item_field_sil_slider_collection_full_width_slider_group_sil_slider_text" class="group-sil-slider-text field-group-div"><div class="slide-title field field-name-field-sil-slider-title field-type-text field-label-hidden"><h2>SIL Work in the Pacific</h2></div><div class="field field-name-field-sil-slider-description"><p>SIL has nearly 60 years of Language Development&nbsp;experience in the South Pacific.</p>
+</div><div class="field field-name-field-sil-slider-link"><a href="http://prod.pacific.sil-dev.info/about-0/who_we_are_" class="btn btn-primary">Learn More</a></div></div></div><img src="http://pacific.sil-dev.info/sites/pacific/files/styles/1280xh/public/slider1_3.png?itok=stMk7zUG" width="1280" height="486" draggable="false"></div>
+
+</li>
+<li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"><div class="ds-1col entity entity-field-collection-item field-collection-item-field-sil-slider-collection view-mode-full_width_slider clearfix">
+
+  
+  <div id="field_collection_item_field_sil_slider_collection_full_width_slider_group_sil_slider_wrapper" class="group-sil-slider-wrapper field-group-div"><div id="field_collection_item_field_sil_slider_collection_full_width_slider_group_sil_slider_text" class="group-sil-slider-text field-group-div"><div class="slide-title field field-name-field-sil-slider-title field-type-text field-label-hidden"><h2>Partners in Language Development</h2></div><div class="field field-name-field-sil-slider-description"><p>SIL volunteers are able to assist with alphabet design in unwritten languages, dictionaries, and literacy.</p>
+</div><div class="field field-name-field-sil-slider-link"><a href="http://pacific.sil-dev.info/language_development" class="btn btn-primary">Learn More</a></div></div></div><img src="http://pacific.sil-dev.info/sites/pacific/files/styles/1280xh/public/slider2_1.png?itok=anYz_6Vr" width="1280" height="665" draggable="false"></div>
+
+</li>
+</ul><ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="flex-active">2</a></li></ol></div>
+</div></div></div></div>
+
+
+</section> <!-- /.block -->
+  </div>
+  </div>
+
+<div class="main-container container">
+{% endblock %}
+</div>
+<footer class="footer">
+        {% include 'footer.twig' %}
+
+</footer>
+    {{ function('wp_footer') }}
+</body>
+</html>
