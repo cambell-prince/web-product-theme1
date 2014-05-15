@@ -24,7 +24,7 @@
 $context = Timber::get_context();
 $post = new TimberPost();
 $context['post'] = $post;
-if (is_front_page()){
+if (is_front_page()) {
 	$context['home_1'] = Timber::get_widgets('home_1');
 	$context['sb-spot-1'] = Timber::get_widgets('spot-1');
 	$context['sb-spot-2'] = Timber::get_widgets('spot-2');

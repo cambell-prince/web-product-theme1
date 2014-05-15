@@ -13,16 +13,20 @@
  * @since 		Timber 0.1
  */
 
-	if (!class_exists('Timber')){
-		echo 'Timber not activated. Make sure you activate the plugin in <a href="/wp-admin/plugins.php#timber">/wp-admin/plugins.php</a>';
-	}
-	$context = Timber::get_context();
-	$context['posts'] = Timber::get_posts();
-	$context['foo'] = 'bar';
+if (!class_exists('Timber')){
+	echo 'Timber not activated. Make sure you activate the plugin in <a href="/wp-admin/plugins.php#timber">/wp-admin/plugins.php</a>';
+}
+$context = Timber::get_context();
+$context['posts'] = Timber::get_posts();
+if (is_front_page()){
+	$context['home_1'] = Timber::get_widgets('home_1');
+	$context['sb-spot-1'] = Timber::get_widgets('spot-1');
+	$context['sb-spot-2'] = Timber::get_widgets('spot-2');
+	$context['sb-spot-3'] = Timber::get_widgets('spot-3');
+	$templates = array('home.twig');
+} else {
 	$templates = array('index.twig');
-	if (is_home()){
-		array_unshift($templates, 'home.twig');
-	}
-	Timber::render($templates, $context);
+}
+Timber::render($templates, $context);
 
 
