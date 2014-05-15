@@ -2019,7 +2019,7 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #333333;
+  color: #c35932;
   text-decoration: none;
 }
 .btn:active,
@@ -2040,18 +2040,18 @@ fieldset[disabled] .btn {
   box-shadow: none;
 }
 .btn-default {
-  color: #333333;
+  color: #c35932;
   background-color: #ffffff;
-  border-color: #cccccc;
+  border-color: #adadad;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333333;
+  color: #c35932;
   background-color: #ebebeb;
-  border-color: #adadad;
+  border-color: #8e8e8e;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2074,11 +2074,11 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #ffffff;
-  border-color: #cccccc;
+  border-color: #adadad;
 }
 .btn-default .badge {
   color: #ffffff;
-  background-color: #333333;
+  background-color: #c35932;
 }
 .btn-primary {
   color: #ffffff;
@@ -3463,7 +3463,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -3478,7 +3478,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: transparent;
   border-color: #428bca;
 }
 .nav .nav-divider {
@@ -6132,7 +6132,7 @@ address {
 body #page-title,
 #page-site-name {
   background: #6f4b6b;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 body.home #page-site-name {
@@ -6146,4 +6146,40 @@ body.home #page-site-name {
   margin: 0;
   padding: 15px 0 10px;
   text-transform: uppercase;
+}
+.footer {
+  background: #6f4b6b;
+  color: #ffffff;
+}
+.footer h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer a {
+  color: #ffffff;
+  font-size: 14px;
+}
+.footer .nav > li > a {
+  padding: 0;
+}
+.footer .nav > li > a:hover,
+.footer .nav > li > a:focus {
+  text-decoration: underline;
+}
+.footer .footer-top {
+  padding: 0 0 1em 0;
+}
+.footer .footer-bottom {
+  background: #9A6894;
+  padding: 1.5em 0 1em 0;
+}
+.footer .footer-bottom .nav li > a {
+  padding: 0 15px 0 15px;
+}
+.nav-horizontal > li {
+  border-right: 1px solid #ffffff;
+  display: inline-block;
+}
+.nav-horizontal > li:last-child {
+  border: 0;
 }

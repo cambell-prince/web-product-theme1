@@ -16,8 +16,8 @@
 }
 
 body #page-title, #page-site-name {
-	background: #6f4b6b;
-	color: #fff;
+	background: @color-bg;
+	color: @color-text;
 	margin-bottom: 20px;
 }
 
@@ -34,4 +34,53 @@ body.home #page-site-name {
 	margin: 0;
 	padding: 15px 0 10px;
 	text-transform: uppercase;
+}
+
+// Footer
+.footer {
+	background: @color-bg;
+	color: @color-text;
+	
+	h2 {
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	
+	a {
+		color: @color-text;
+		font-size: 14px;
+	}
+	
+	.nav > li > a {
+		padding: 0;
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-top {
+		padding: 0 0 1em 0;
+	}
+	
+	.footer-bottom {
+		background: #9A6894;
+		padding: 1.5em 0 1em 0;
+
+		.nav li > a {
+			padding: 0 15px 0 15px;
+		}
+	}
+
+}
+
+// Footer Navs
+.nav-horizontal {
+	> li {
+		border-right: 1px solid @color-text;
+		display: inline-block;
+		&:last-child {
+			border: 0;
+		}
+	}
 }
