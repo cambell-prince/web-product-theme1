@@ -1,22 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "d90a52639b25cb2b3ffac995f65e072b",
+    "hash": "abfda97fabe8cdb8c9da65707fe712de",
     "packages": [
         {
             "name": "fortawesome/font-awesome",
-            "version": "v4.0.3",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6"
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
-                "reference": "0373b63c16d7aa31b6715c3f81a98a2ffb9f40a6",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/2649d91d18629bab071449b3bc4cb02761037a57",
+                "reference": "2649d91d18629bab071449b3bc4cb02761037a57",
                 "shasum": ""
             },
             "require-dev": {
@@ -42,7 +43,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "The iconic font designed for Bootstrap",
+            "description": "The iconic font and CSS framework",
             "homepage": "http://fontawesome.io/",
             "keywords": [
                 "FontAwesome",
@@ -51,7 +52,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2013-11-05 12:35:21"
+            "time": "2014-05-14 20:37:30"
         }
     ],
     "packages-dev": [
@@ -105,6 +106,7 @@
     "stability-flags": [
 
     ],
+    "prefer-stable": false,
     "platform": [
 
     ],
